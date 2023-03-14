@@ -1,3 +1,5 @@
+#Step do Azure Devops Classico utilizando o Powershell como Task
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip -UseBasicParsing -OutFile $(System.DefaultWorkingDirectory)\pipeline-scan-LATEST.zip
 Expand-Archive $(System.DefaultWorkingDirectory)\pipeline-scan-LATEST.zip -DestinationPath $(System.DefaultWorkingDirectory)\pipeline-scan-LATEST
